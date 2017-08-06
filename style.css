@@ -1,0 +1,16 @@
+/*
+Theme Name: ira-upskills
+Theme URI: https://wordpress.org/themes/iraupskillsevent/
+Author: Beekeeper Design Studio
+Author URI: https://beekeeperstudio.com/
+Description: Created on: 12th July 2017 | Sandbox theme for Ira-Upskills
+Version: 1.0
+Text Domain: iraupskillsevent
+*/
+
+/* helper page names guide to display the page names in the frontend for the tribe-events folder */
+.page_guide {
+	color: red;
+	display: block;
+	/*display: none;*/
+	}
