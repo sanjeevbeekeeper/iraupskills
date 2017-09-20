@@ -14,8 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 } ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> month > loop-grid.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> month > loop-grid.php </small> -->
 
 <?php
 $days_of_week = tribe_events_get_days_of_week();

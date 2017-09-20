@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <!-- calling the header -->
 
-
 <!-- ribbon -->
 <div class="row ribbon-container accent-one">
     <!-- searchform.php -->
@@ -9,7 +8,7 @@
 </div>
 
 <!-- GUIDE -->
-<h3 class="page_guide"> theme > index.php </h3>
+<!-- <h3 class="page_guide"> theme > index.php </h3> -->
 <!-- GUIDE -->
 
     <div class="container">

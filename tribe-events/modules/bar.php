@@ -24,14 +24,13 @@ $current_url = tribe_events_get_current_filter_url();
 ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> modules > bar.php </small>
-<!-- GUIDE -->
-
-<!-- GUIDE -->
-<!-- <small style="color:blue;"> modules > bar.php </small> -->
-<!-- GUIDE -->
-
+<!-- <small class="page_guide"> modules > bar.php </small> -->
 <?php do_action( 'tribe_events_bar_before_template' ) ?>
+
+
+
+
+
 <div id="tribe-events-bar">
 
 	<form id="tribe-bar-form" class="tribe-clearfix" name="tribe-bar-form" method="post" action="<?php echo esc_attr( $current_url ); ?>">

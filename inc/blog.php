@@ -11,12 +11,6 @@
 	add_filter('excerpt_more', 'BeekeeperDesignStudio_excerpt');
 
 /* =================================================
-    Activate: Featured image
-    20 mar 2017
-==================================================== */
-	add_theme_support( 'post-thumbnails' );
-
-/* =================================================
     Search Query: Search only on the Blog
     20 mar 2017
 ==================================================== */

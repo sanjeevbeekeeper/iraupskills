@@ -25,5 +25,4 @@ do_action( 'tribe_events_after_template' );
 
 ?>
 <!-- GUIDE -->
-<small class="page_guide"> root > month.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> root > month.php </small> -->

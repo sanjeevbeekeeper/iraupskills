@@ -15,8 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 } ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> day > loop.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> day > loop.php </small> -->
 
 <?php
 
@@ -37,8 +36,24 @@ $current_timeslot = null;
 	</div>
 	<!-- .tribe-events-day-time-slot -->
 
+	<!-- Month / Year Headers -->
 	<div class="tribe-events-day-time-slot">
-		<h5><?php echo $current_timeslot; ?></h5>
+		<table class="date--header">
+			<tr>
+				<td nowrap>
+					<h2>
+						<?php echo $current_timeslot; ?>
+						<!-- July, 2017 -->
+					</h2>
+				</td>
+				<td class="line">
+					<!-- line from css -->
+				</td>
+			</tr>
+		</table>
+		<!-- <h5> -->
+			<?php //echo $current_timeslot; ?>
+		<!-- </h5> -->
 		<?php endif; ?>
 
 		<!-- Event  -->

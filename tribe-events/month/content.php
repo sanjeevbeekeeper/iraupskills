@@ -22,7 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<!-- Month Title -->
 	<?php do_action( 'tribe_events_before_the_title' ) ?>
-	<h2 class="tribe-events-page-title"><?php tribe_events_title() ?></h2>
+		<h2 class="tribe-events-page-title">
+			<strong><?php tribe_events_title() ?></strong>
+		</h2>
 	<?php do_action( 'tribe_events_after_the_title' ) ?>
 
 	<!-- Notices -->

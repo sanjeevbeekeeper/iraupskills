@@ -1,0 +1,28 @@
+{
+  "name": "ira-upskills",
+  "version": "1.0.0",
+  "description": "Grunt file for Ira Upskills Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "wordpress",
+    "website",
+    "official"
+  ],
+  "author": "Beekeeper Design Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

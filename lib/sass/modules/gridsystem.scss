@@ -1,0 +1,27 @@
+// Beekeeper Design Studio
+// modules/gridsystem.scss
+// 2017-08-23
+
+$lg: 1200px; // larger desktop
+$md: 992px; // desktop
+$sm: 768px; // tablet
+$xs: 540px; // mobile // Custom size
+
+// nogutter
+.nogutter {
+    padding-left: 0;
+    padding-right: 0;
+    &-left {
+        padding-left: 0;
+        }
+    &-right {
+        padding-right: 0;
+        }
+    }
+
+.gridguide {
+    position: fixed;
+    background-color: #fff;
+    padding: 5px;
+    z-index: 10;
+    }

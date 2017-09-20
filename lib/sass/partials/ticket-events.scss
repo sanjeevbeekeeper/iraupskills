@@ -1,0 +1,287 @@
+// Beekeeper Design Studio
+// ticket-events.scss
+// 2017-08-27
+
+// logo color - Variables
+$logoblue: #2480c9;
+$logoorange: #f76f47;
+
+
+// Notification message that displays above the Google map (single.php page) for ticket.
+.ticket--notification_message {
+    margin-top: 20px;
+    }
+
+// bottom pagination margin
+.events-list #tribe-events-footer, .tribe-events-day #tribe-events-footer, .tribe-events-map #tribe-events-footer {
+    margin: 0;
+    }
+
+// Key and Value from the Dashbaord for the single page
+.event--meta {
+    $bg: ivory;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    color: coral;
+    margin-left: -20px;
+    margin-right: -20px;
+    @include borderradius(3px);
+    background-color: $bg;
+    border-top: 1px solid darken($bg, 55);
+    border-bottom: 1px solid darken($bg, 55);
+    ul.post-meta {
+        padding: 10px 10px 10px 20px;
+        margin-bottom: 0 !important;
+        list-style: none;
+        font-weight: bold;
+        .post-meta-key {
+            font-weight: normal;
+            }
+        }
+    }
+
+// Day view: Month and Year
+.tribe-events-list h2.tribe-events-page-title {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+// Google map in the single page
+.single-tribe_events .tribe-events-event-meta {
+    padding: 0 !important;
+    line-height: 0;
+    }
+
+// top navigation for list view
+.tribe-events-sub-nav {
+    margin-bottom: 40px !important;
+    }
+
+//----------
+
+// DAY View: content alignment
+.tribe-events-day .tribe-events-day-time-slot .type-tribe_events {
+    margin-left: 0;
+}
+
+// CALENDAR: week title bg
+.tribe-events-calendar th {
+    background-color: $logoblue;
+    color: #fff;
+    }
+
+// CALENDAR-MOBILE: Month heading
+.tribe-mobile-day-heading {
+    font-weight: bold;
+    margin-top: 20px;
+    }
+
+// CALENDAR-MOBILE: Date
+.tribe-events-event-schedule-details {
+    font-style: italic;
+    margin-bottom: 20px;
+    }
+
+// CALENDAR-MOBILE: Description
+.tribe-event-description {
+    margin-top: 10px;
+    }
+// CALENDAR: Today bg color
+// .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+//     background-color: $logoorange;
+//     }
+
+// CALENDAR: table border
+#tribe-events-content .tribe-events-calendar td, #tribe-events-content table.tribe-events-calendar {
+    border: 1px solid $logoblue;
+    }
+
+//----------
+
+// CALENDAR/tooltip: Heading
+#tribe-events-content .tribe-events-tooltip h4 {
+    background-color: $logoblue;
+    line-height: 1.5;
+    padding: 10px;
+    }
+
+// CALENDAR/tooltip: Date
+.tribe-event-duration {
+    font-style: italic;
+    margin: 10px 0;
+    }
+
+// CALENDAR/tooltip: Description
+.tribe-event-description {
+    margin-left: 3px;
+    }
+
+// Month and year heading in the list home page - tribe-events/list/single-event.php
+.tribe-events-list-separator-month {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+    background-color: transparent;
+    padding: 0;
+    }
+
+//----------
+
+// removed the border line under the ticket stock count
+.tribe-events-tickets-rsvp .tribe-ticket.quantity {
+    border-bottom: 0px solid white !important;
+    }
+
+.tribe-events-event-meta .column, .tribe-events-event-meta .tribe-events-meta-group {
+    width: auto !important;
+    }
+
+//---------- FEATURED IMAGE
+
+// Feature image width adjustment for - tribe-events/single-event.php
+.event--container-single {
+    overflow: hidden;
+    .featured-img {
+        position: relative; // this is for the position:absolute in the child
+        height: auto;
+        max-height: 300px;
+        overflow: hidden;
+        img {
+            @media screen and (max-width: $xs) {
+                transform: translate(-80px, 0);
+                }
+            }
+        .tribe-events-event-image img {
+            width: 100% !important;
+            position: absolute; // require position:relative in the parent.
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            }
+        } // .featured-img
+    } // .event--container-single
+
+// .tribe-events-list .tribe-events-event-image img {
+    // -webkit-transform: translate(-30%, 0px); /* Safari */
+        // -ms-transform: translate(-30%, 0px); /* IE 9 */
+            // transform: translate(-30%, 0px);
+    // @media screen and (max-width: $sm) {
+        // width: 100%
+        // border: 1px solid red;
+    // -webkit-transform: translate(-50%, 0px); /* Safari */
+        // -ms-transform: translate(-50%, 0px); /* IE 9 */
+            // transform: translate(-50%, 0px);
+        // }
+    // }
+
+//----------
+
+// View your RSVP page - Reserved by <username> date..
+.event--container-single__content .event--description a {
+    display: inline-block !important;
+    }
+
+//----------
+
+// removed the line inbetween the evnets in the main page
+.tribe-events-list .type-tribe_events {
+    border-bottom: 0px solid white !important;
+    }
+
+// removed the space inbetween two events in the main page
+.tribe-events-list .type-tribe_events {
+    padding: 0 !important;
+    }
+
+// removed the background for the count increment input field for the ticket
+.tribe-events-tickets {
+    background: none !important;
+    }
+
+//----------
+
+.tribe-rsvp {
+    padding: 0 !important;
+    }
+
+.tribe-submit-tickets-form {
+    margin-top: 0 !important;
+    }
+
+.user-details {
+    // margin-top: 10px;
+    margin-bottom: 0 !important;
+    }
+
+.tribe-rsvp-list > .tribe-item:last-child {
+    margin-bottom: 20px !important;
+    }
+
+//----------
+
+// map configuration
+.single-tribe_events .tribe-events-venue-map {
+    background: none !important;
+    border: 0px solid white !important;
+    margin: 0 !important;
+    }
+.single-tribe_events .secondary .tribe-events-venue-map {
+    width: 100% !important;
+    }
+
+//----------
+
+// venue
+.tribe-events-event-meta .column, .tribe-events-event-meta .tribe-events-meta-group {
+    padding: 0 !important;
+    }
+
+// venue name format
+.tribe-venue {
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+    font-size: 18px;
+    }
+//----------
+
+// Single page - featured image
+.single-tribe_events .tribe-events-event-image {
+    margin-bottom: 0!important;
+    }
+
+.single-tribe_events .tribe-events-event-meta {
+    background: none !important;
+    border: 0px solid transparent !important;
+    margin: 0px;
+    }
+
+// Send RSVP confirmation to
+.tribe-tickets-attendees {
+    header {
+        border-top: 1px solid gray;
+        padding-top: 10px;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        }
+    }
+
+// input field - Full name, Email
+.tribe-tickets-has-rsvp
+.tribe-tickets-meta-row {
+    display: block !important;
+    }
+
+// Notification message
+.tribe-rsvp-message {
+    font-size: 15px !important; // newly added
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+    border-radius: 4px !important;
+    &-success {
+        color: #3c763d !important;
+        background-color: #dff0d8 !important;
+        border-color: #d6e9c6 !important;
+        }
+    }

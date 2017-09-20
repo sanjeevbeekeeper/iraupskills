@@ -1,0 +1,18 @@
+// Beekeeper Design Studio
+// errorpage.scss
+// 2017-09-12
+
+.errorpage {
+    &--container {
+        $fs: 40px;
+        &__title {
+            font-size: $fs;
+            font-weight: bold;
+            line-height: 1;
+            }
+        &__subtitle {
+            font-size: $fs / 2;
+            margin-bottom: $fs / 2;
+            }
+        } // &--container
+    } // .errorpage

@@ -18,24 +18,27 @@ $events_label = ( 1 === $day['total_events'] ) ? tribe_get_event_label_singular(
 ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> month > single-day.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> month > single-day.php </small> -->
 
-<!-- Day Header -->
-<div id="tribe-events-daynum-<?php echo $day['daynum-id'] ?>">
 
-	<?php if ( $day['total_events'] > 0 && tribe_events_is_view_enabled( 'day' ) ) : ?>
-		<a href="<?php echo esc_url( tribe_get_day_link( $day['date'] ) ); ?>"><?php echo $day['daynum'] ?></a>
-	<?php else : ?>
-		<?php echo $day['daynum'] ?>
-	<?php endif; ?>
 
-</div>
+	<!-- Day Header -->
+	<div id="tribe-events-daynum-<?php echo $day['daynum-id'] ?>">
+		<?php if ( $day['total_events'] > 0 && tribe_events_is_view_enabled( 'day' ) ) : ?>
+			<a href="<?php echo esc_url( tribe_get_day_link( $day['date'] ) ); ?>">
+				<?php echo $day['daynum'] ?>
+			</a>
+		<?php else : ?>
+			<?php echo $day['daynum'] ?>
+		<?php endif; ?>
+	</div>
 
-<!-- Events List -->
-<?php while ( $day['events']->have_posts() ) : $day['events']->the_post(); ?>
-	<?php tribe_get_template_part( 'month/single', 'event' ) ?>
-<?php endwhile; ?>
+
+
+	<!-- Events List -->
+	<?php while ( $day['events']->have_posts() ) : $day['events']->the_post(); ?>
+		<?php tribe_get_template_part( 'month/single', 'event' ) ?>
+	<?php endwhile; ?>
 
 <!-- View More -->
 <?php if ( $day['view_more'] ) : ?>

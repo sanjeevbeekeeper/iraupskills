@@ -18,16 +18,14 @@ do_action( 'tribe_events_before_template' );
 ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> root > list.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> root > list.php </small> -->
 
 	<!-- Tribe Bar -->
-<?php tribe_get_template_part( 'modules/bar' ); ?>
+	<?php tribe_get_template_part( 'modules/bar' ); ?>
 
 	<!-- Main Events Content -->
-<?php tribe_get_template_part( 'list/content' ); ?>
-	<div class="tribe-clear"></div>
-
+	<?php tribe_get_template_part( 'list/content' ); ?>
+		<div class="tribe-clear"></div>
 
 <?php
 do_action( 'tribe_events_after_template' );

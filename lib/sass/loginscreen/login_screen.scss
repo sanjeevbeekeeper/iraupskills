@@ -1,0 +1,96 @@
+/*
+ * login_screen.css
+ * Beekeeper Design Studio
+ * Created on 2nd Sep 2017
+ * Customize login screen for Ira-Upskills
+ */
+
+// Variables
+$logo: 'img/login_logo.png';
+$bg: '../resources/bg.jpg';
+$default_color: #f76f46; // logo orange
+
+/* ---------- */
+
+// Page background
+.login {
+    background-image: url(#{$bg});
+    }
+
+/* ---------- */
+
+// Brand Logo
+// Logo
+.login h1 a {
+    background-image: url(#{$logo});
+    background-size: 100% !important;
+    width: 250px;
+    }
+
+/* ---------- */
+
+// Security Elements
+// HIDE: 'Lost your password?'
+p#nav {
+    // display: none;
+    }
+
+// HIDE: 'Back to link'
+p#backtoblog {
+    // display: none;
+    }
+
+/* ---------- */
+
+// Error page
+// Wrong Username and Password
+.login #login_error {
+    border-left-color: $default_color;
+    }
+
+/* ---------- */
+
+// Form Elements
+// form outline
+#loginform {
+    border: 1px solid gainsboro;
+    }
+
+// Button state
+.login .button-primary {
+    background-color: $default_color;
+    border-color: darken($default_color, 15);
+    text-shadow: none;
+    -webkit-box-shadow:0 1px 0 darken($default_color, 20);
+            box-shadow: 0 1px 0 darken($default_color, 20);
+    }
+// :hover & :focus
+.login .button-primary:hover,
+.login .button-primary:focus {
+    background-color: darken($default_color, 10);
+    border-color: darken($default_color, 20);
+    }
+// :focus
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+    box-shadow: 0 1px 0 darken($default_color, 40), 0 0 2px 1px lighten($default_color, 20);
+    }
+
+// Label text
+.login label {
+    /* label text css code here */
+    }
+
+// Input text
+.login input[type="text"]{
+    /*background-color: #ffffff;*/
+    /*border-color:#dddddd;*/
+    /*-webkit-border-radius: 4px;*/
+    }
+
+// Input password
+.login input[type="password"]{
+    /*background-color: #ffffff;*/
+    /*border-color:#dddddd;*/
+    /*-webkit-border-radius: 4px;*/
+    }

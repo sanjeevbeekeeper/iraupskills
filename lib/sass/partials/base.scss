@@ -1,0 +1,28 @@
+// Beekeeper Design Studio
+// base.scss
+// 2017-08-22
+
+body {
+    font-family: 'Noto Sans', sans-serif !important;
+    }
+
+// stripped tile image for the body
+// the class is added in the default-template.php
+.ira-upskills_bg {
+    $bg: 26px;
+    background-image: url('http://localhost/ira-upskills/resources/bg.jpg');
+    background-repeat: repeat;
+    background-size: $bg $bg;
+    }
+
+.bor {
+    &-dashed{
+        border: 1px dashed red;
+        }
+    &-dotted{
+        border: 1px dotted blue;
+        }
+    &-thick {
+        border: 3px solid green;
+        }
+    }

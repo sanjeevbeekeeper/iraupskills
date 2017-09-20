@@ -15,16 +15,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 } ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> day > nav.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> day > nav.php </small> -->
 
-<h3 class="screen-reader-text" tabindex="0"><?php esc_html_e( 'Day Navigation', 'the-events-calendar' ) ?></h3>
-<ul class="tribe-events-sub-nav">
+	<!-- Screen reader -->
+	<h3 class="screen-reader-text" tabindex="0">
+		<?php esc_html_e( 'Day Navigation', 'the-events-calendar' ) ?>
+	</h3>
 
-	<!-- Previous Page Navigation -->
-	<li class="tribe-events-nav-previous" aria-label="previous day link"><?php tribe_the_day_link( 'previous day' ) ?></li>
+	<!-- Pagination -->
+	<ul class="tribe-events-sub-nav">
+		<!-- Previous Page Navigation -->
+		<li class="tribe-events-nav-previous" aria-label="previous day link">
+			<?php tribe_the_day_link( 'previous day' ) ?>
+		</li>
 
-	<!-- Next Page Navigation -->
-	<li class="tribe-events-nav-next" aria-label="next day link"><?php tribe_the_day_link( 'next day' ) ?></li>
-
-</ul>
+		<!-- Next Page Navigation -->
+		<li class="tribe-events-nav-next" aria-label="next day link">
+			<?php tribe_the_day_link( 'next day' ) ?>
+		</li>
+	</ul>

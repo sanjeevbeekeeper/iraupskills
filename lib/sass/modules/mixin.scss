@@ -1,0 +1,44 @@
+// Beekeeper Design Studio
+// modules/mixin.scss
+// 2017-09-15
+
+// box shadow / 2017-09-15
+// box-shadow: 3px 3px 3px white;
+@mixin boxshadow($h, $v, $b, $c) {
+  -webkit-box-shadow: $h $v $b $c; // Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+
+     -moz-box-shadow: $h $v $b $c; // Firefox 3.5 - 3.6
+          box-shadow: $h $v $b $c; // Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS
+    }
+
+// transform property/ 2017-09-15
+// transform: translate(0px, 0px);
+@mixin transform-translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+       -moz-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+         -o-transform: translate($x, $y);
+            transform: translate($x, $y);
+    }
+
+// opacity property / 2017-09-15
+// opacity: 0.5px;
+// Thanks for css-tricks
+@mixin opacity ($mb, $ob) {
+    // Theoretically for IE 8 & 9 (more valid)
+    // ...but not required as filter works too
+    // should come BEFORE filter
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$ob})"; // IE8
+    // This works in IE 8 & 9 too
+    // ... but also 5, 6, 7
+    filter: alpha(opacity=$ob); // IE 5-7
+    // Modern Browsers
+    opacity: $mb;
+    }
+
+// border radius / 2017-09-15
+// border-radius: 2px;
+@mixin borderradius($val) {
+    -webkit-border-radius: $val; // Safari 3-4, iOS 1-3.2, Android 1.6-
+       -moz-border-radius: $val; // Firefox 1-3.6
+            border-radius: $val; // Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+
+    }

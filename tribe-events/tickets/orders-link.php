@@ -46,10 +46,8 @@ $message = sprintf( esc_html__( 'You have %s for this %s.', 'event-tickets' ), i
 $message .= ' <a href="' . esc_url( $link ) . '">' . sprintf( esc_html__( 'View your %s', 'event-tickets' ), $this->get_description_rsvp_ticket( $event_id, $user_id, true ) ) . '</a>';
 ?>
 
-<!-- GUIDE -->
-<small class="page_guide"> tickets > tickets > orders-link.php </small>
-<!-- GUIDE -->
 
-<div class="tribe-link-tickets-message">
+<!-- Order link message -->
+<div class="alert alert-warning tribe-link-tickets-message">
 	<?php echo $message; ?>
 </div>

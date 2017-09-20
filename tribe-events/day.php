@@ -17,8 +17,7 @@ do_action( 'tribe_events_before_template' );
 ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> root > day.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> root > day.php </small> -->
 
 <!-- Tribe Bar -->
 <?php tribe_get_template_part( 'modules/bar' ); ?>

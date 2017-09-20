@@ -18,20 +18,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 } ?>
 
 <!-- GUIDE -->
-<small class="page_guide"> list > nav.php </small>
-<!-- GUIDE -->
+<!-- <small class="page_guide"> list > nav.php </small> -->
 
+
+<!-- GUIDE -->
+<!-- <small class="page_guide"> list > nav.php > pagination left </small> -->
 <h3 class="screen-reader-text" tabindex="0"><?php echo esc_html( sprintf( esc_html__( '%s List Navigation', 'the-events-calendar' ), $events_label_plural ) ); ?></h3>
 <ul class="tribe-events-sub-nav">
-	<!-- Left Navigation -->
 
+	<!-- Left Navigation -->
 	<?php if ( tribe_has_previous_event() ) : ?>
 		<li class="<?php echo esc_attr( tribe_left_navigation_classes() ); ?>" aria-label="previous events link">
-			<a href="<?php echo esc_url( tribe_get_listview_prev_link() ); ?>" rel="prev"><?php printf( '<span>&laquo;</span> ' . esc_html__( 'Previous %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
-
-		</li><!-- .tribe-events-nav-left -->
+				<a href="<?php echo esc_url( tribe_get_listview_prev_link() ); ?>" rel="prev"><?php printf( '<span>&laquo;</span> ' . esc_html__( 'Previous %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
+			</li><!-- .tribe-events-nav-left -->
 	<?php endif; ?>
 
+	<!-- GUIDE -->
+	<!-- <small class="page_guide"> list > nav.php > pagination right </small> -->
 	<!-- Right Navigation -->
 	<?php if ( tribe_has_next_event() ) : ?>
 		<li class="<?php echo esc_attr( tribe_right_navigation_classes() ); ?>" aria-label="next events link">

@@ -1,0 +1,254 @@
+// Beekeeper Design Studio
+// event-container.scss
+// 2017-08-22
+
+// Featured image alignment in the single page
+.featured-image {
+    @include transform-translate(-271px, 0);
+    @media screen and (max-width: $lg) {
+        @include transform-translate(-266px, 0);
+        }
+    @media screen and (max-width: $md) {
+        @include transform-translate(-275px, 0);
+        }
+    @media screen and (max-width: $sm) {
+        @include transform-translate(-60px, 0);
+        }
+    @media screen and (max-width: $xs) {
+        @include transform-translate(-180px, 0);
+        }
+    }
+
+.event {
+    // .event-meta
+    &-meta {
+        $top: 20px;
+        // organiser meta in the single page
+        // .event-meta__organiser
+        &__organizer {
+            @media screen and (max-width: $sm) {
+                margin-top: $top;
+                } // @media
+            } // organizer
+        // venue meta in the single page
+        // .event-meta__venue
+        &__venue {
+            border: 1px solid red;
+            @media screen and (max-width: $sm) {
+                margin-top: $top;
+                }
+            } // &__venue
+        } // &-meta
+    // .event--pagination
+    &--pagination {
+        margin-top: 30px;
+        font-weight: bold;
+        }
+    // .event--single__backbtn
+    &--single__backbtn {
+        font-weight: bold;
+        margin-bottom: 30px;
+        }
+    }
+
+.event--details__container {
+    margin-top: 20px;
+    border: 1px solid $graylight;
+    background-color: #fff;
+    @include borderradius(3px);
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .tribe-events-single-section-title {
+        text-transform: uppercase;
+        color: $gray;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 15px;
+        } //h4
+    dl, dt {
+        font-size: 14px;
+        a {
+            display: block;
+            }
+        } //p
+    } //.event--details__container
+
+// Event Container Single
+.event--container-single {
+    border: 1px solid $graylight;
+    @include boxshadow(2px, 2px, 4px, $graylight);
+        .featured-img-single {
+            height:300px;
+            @media screen and (max-width: $sm) {
+                height:200px;
+                }
+            } //.featured-img-single
+    &__content {
+        border: 1px solid $graylight;
+        background-color: #f7f7f7;
+        overflow: hidden;
+        .event {
+            &--title {
+                border-bottom: 2px dashed $graylight;
+                padding: 20px;
+                background-color: ghostwhite;
+                h3 {
+                    color: darkgreen;
+                    font-weight: bold;
+                    line-height: 1.5;
+                    margin-top: 0;
+                    font-size: 16px;
+                    } // h3
+                @media screen and (min-width: $sm) {
+                    &__date {
+                        margin-bottom: 10px;
+                        }
+                    } //@media
+                } // .event--title
+            &--organizer {
+                color: $gray;
+                font-weight: bold;
+                margin-top: 10px;
+                &:before {
+                    content: 'Resource Persons: ';
+                    color: #666;
+                    text-transform: uppercase;
+                    } // :before
+                } // .event--oranizer
+            &--description {
+                padding: 20px 20px 40px 20px;
+                line-height: 1.5;
+                 hr {
+                    border-top: 1px solid $graylight;
+                    display: block !important;
+                    }
+                h1, h2, h3, h4, h5, h6 {
+                    text-decoration: underline;
+                    }
+                a {
+                    margin-top: 10px;
+                    display: block;
+                    }
+                } // .event--description
+            &--attendee {
+                padding: 20px 20px 0px 20px;
+                &__button {
+                    padding: 0px 20px 20px 20px;
+                    }
+                }
+            } // .event
+        } // &__content
+    } // .event--container-single
+
+
+// WARNING
+// This .event--ticket is disconnected from its parent above .event--container-single__content
+// Do not move this child .event--ticket under its parent.
+// This is causing the css issue and not able to read live.
+
+.event--ticket {
+    border-top: 2px dashed $graylight;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background-color: #fffadd;
+    overflow: hidden;
+    margin-top: -20px; // This is just temporary
+    h3 {
+        margin: 0;
+        font-size: 19px;
+        font-weight: bold;
+        @include opacity(0.5, 50);
+        @media screen and (max-width: $sm) {
+            margin-bottom: 10px;
+            }
+        } //h3
+    &__rsvp {
+        padding: 20px;
+        background-color: #f9f0c9;
+        .btn {
+            margin-left: 10px;
+            }
+        } // &__rsvp
+    } // .event--ticket
+
+
+
+// ----- END OF SINGLE ----- //
+
+
+
+// Event Container Home - 2017-08-22
+.event--container-home {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    @include boxshadow(2px, 2px, 4px, $graylight);
+    max-height: 298px;
+    overflow: hidden;
+    @media screen and (max-width: $sm) {
+        overflow: none;
+        max-height: 100%;
+        }
+    &__content {
+        background-color: #f7f7f7;
+        border: 1px solid $graylight;
+        .event {
+            &--title {
+                background-color: ghostwhite;
+                a {
+                    color: #2e91e6 !important;
+                    }
+                border-bottom: 2px dashed $graylight;
+                padding: 20px;
+                h3 {
+                    line-height: 1.5;
+                    margin-top: 0;
+                    font-size: 16px;
+                    font-weight: bold;
+                    } // h3
+                &__date {
+                    margin-bottom: 10px;
+                    }
+                @media screen and (max-width: $sm) {
+                    &__date {
+                        margin-bottom: 10px;
+                        }
+                    } //@media
+                } // .event--title
+            &--organizer {
+                color: gray;
+                font-weight: bold;
+                &:before {
+                    content: 'Resource persons: ';
+                    color: #666;
+                    text-transform: uppercase;
+                    } // :before
+                } // .event--oranizer
+            &--description {
+                padding: 20px 20px 20px 20px;
+                height: 172px;
+                // border: 2px solid blue;
+                a {
+                    margin-top: 10px;
+                    display: block;
+                    }
+                    @media screen and (max-width: $sm) {
+                        // overflow: none;
+                        height: 100%;
+                        }
+                } // .event--description
+            &--ticket {
+                border-top: 2px dashed lightgray;
+                overflow: hidden;
+                width: 100%;
+                bottom: 0;
+                padding: 20px;
+                background-color: #fffadd;
+                .btn {
+                    margin-left: 10px;
+                    }
+                } // .event--ticket
+            } // .event
+        } // .event--container__content
+    } // .event--container
