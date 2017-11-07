@@ -18,9 +18,6 @@ $website = tribe_get_organizer_website_link();
 ?>
 
 
-
-
-
 <!--
 * Beekeeper Design Studio
 * 31 Aug 2017

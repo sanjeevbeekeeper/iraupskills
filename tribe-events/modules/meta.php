@@ -17,6 +17,10 @@ $not_skeleton = ! apply_filters( 'tribe_events_single_event_the_meta_skeleton', 
 $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venue', false, get_the_ID() );
 ?>
 
+<!-- GUIDE -->
+<!-- <small class="page_guide"> modules > meta.php </small> -->
+<!-- GUIDE -->
+
 <div class="row">
 
 	<?php if ( $not_skeleton ) : ?>
@@ -50,7 +54,6 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 				}
 			?>
 
-
 			<!-- <small class="page_guide"> modules > meta.php > organizer </small> -->
 			<?php
 				// Include organizer meta if appropriate
@@ -69,7 +72,6 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 
 
 		<?php endif; ?>
-
 
 
 

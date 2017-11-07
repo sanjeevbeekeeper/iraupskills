@@ -29,7 +29,7 @@ function bootstrap_style_script() {
         '1.0.0',
         'all'
     );
-    
+
     //slideshow for font-page js (24 jan 2017)
     wp_enqueue_script(
         'costdisplay',	get_template_directory_uri() . '/lib/scripts/costdisplay.js', array('jquery'), '1.0.0', true);
@@ -37,13 +37,13 @@ function bootstrap_style_script() {
 
 
     // Ira-Upskills Custom css
-    wp_enqueue_style(
-        'studiocss',
-        get_stylesheet_directory_uri() . '/lib/styles/main.min.css',
-        array(),
-        '1.0.0',
-        'all'
-        );
+    // wp_enqueue_style(
+    //     'studiocss',
+    //     get_stylesheet_directory_uri() . '/lib/styles/main.min.css',
+    //     array(),
+    //     '1.0.0',
+    //     'all'
+    //     );
 
     // fontawesome
     wp_enqueue_style(

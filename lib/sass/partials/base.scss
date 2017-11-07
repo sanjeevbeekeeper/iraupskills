@@ -10,7 +10,8 @@ body {
 // the class is added in the default-template.php
 .ira-upskills_bg {
     $bg: 26px;
-    background-image: url('http://localhost/ira-upskills/resources/bg.jpg');
+    // background-image is directly added as inline css - default.template.php
+    // background-image: url('http://localhost/ira-upskills/resources/bg.jpg');
     background-repeat: repeat;
     background-size: $bg $bg;
     }

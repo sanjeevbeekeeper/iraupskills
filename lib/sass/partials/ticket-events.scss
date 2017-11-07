@@ -6,6 +6,11 @@
 $logoblue: #2480c9;
 $logoorange: #f76f47;
 
+// When in mobile, there's more space at the top, which is fixed using the custom padding.
+// 30 sep 2017
+#tribe-events-pg-template {
+    padding: 0px 40px 20px 20px;
+    }
 
 // Notification message that displays above the Google map (single.php page) for ticket.
 .ticket--notification_message {
@@ -144,11 +149,18 @@ $logoorange: #f76f47;
     .featured-img {
         position: relative; // this is for the position:absolute in the child
         height: auto;
-        max-height: 300px;
         overflow: hidden;
+        height: 300px;
         img {
+            transform: translate(-50px, 0);
+            @media screen and (max-width: $lg) {
+                transform: translate(-30px, 0);
+                }
+            @media screen and (max-width: $md) {
+                transform: translate(-70px, 0);
+                }
             @media screen and (max-width: $xs) {
-                transform: translate(-80px, 0);
+                transform: translate(-180px, 0);
                 }
             }
         .tribe-events-event-image img {

@@ -21,7 +21,7 @@ get_header();
 <!-- <small class="page_guide"> root > default-template.php </small> -->
 
 <!-- content wrapping -->
-<div class="container ira-upskills_bg">
+<div class="container ira-upskills_bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/resources/bg.jpg)">
 
 
 	<div class="row">
